@@ -4,10 +4,10 @@ import {PRODUCTS} from '../mutation-types'
 // initial state
 const state = {
   all: []
-}
+};
 
 // getters
-const getters = {}
+const getters = {};
 
 // actions
 const actions = {
@@ -16,7 +16,7 @@ const actions = {
       commit(PRODUCTS.SET_PRODUCTS, products)
     })
   }
-}
+};
 
 // mutations
 const mutations = {
@@ -25,10 +25,10 @@ const mutations = {
   },
 
   [PRODUCTS.DECREMENT_PRODUCT_INVENTORY] (state, { id, number }) {
-    const product = state.all.find(product => product.id === id)
+    const product = state.all.find(product => product.id === id);
     product.inventory -= number
   }
-}
+};
 
 export default {
   namespaced: true,

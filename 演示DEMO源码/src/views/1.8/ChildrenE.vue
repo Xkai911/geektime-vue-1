@@ -14,6 +14,7 @@ export default {
   },
   methods: {
     handleClick() {
+      this.theme.color = "green"
       if (this.theme.changeColor) {
         this.theme.changeColor("green");
       }

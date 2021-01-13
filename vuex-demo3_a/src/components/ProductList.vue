@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState ,mapActions} from 'vuex'
 
 export default {
   data(){
@@ -58,7 +58,7 @@ export default {
       this.$store.dispatch(
         'cart/addProductToCart',
         {product, number: this.numbers[product.id]}
-      )
+      );
       this.numbers[product.id] = 1
     }
   },

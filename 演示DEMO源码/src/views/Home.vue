@@ -41,6 +41,10 @@ export default {
         {
           key: "1.10",
           name: "template、JSX对比"
+        },
+        {
+          key: "table",
+          name: "vue实战练习"
         }
       ]
     };
